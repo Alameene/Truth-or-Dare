@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Truth or Dare</title>
+  <link rel="stylesheet" href="another.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Truth or Dare</h1>
+    <form id="playerForm">
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="position">Choose your position:</label>
+        <select id="position" name="position" required>
+          <option value="">Select Position</option>
+          <option value="1">Player 1</option>
+          <option value="2">Player 2</option>
+          <option value="3">Player 3</option>
+          <option value="4">Player 4</option>
+          <option value="5">Player 5</option>
+          <option value="6">Player 6</option>
+          <option value="7">Player 7</option>
+          <option value="8">Player 8</option>
+          <option value="9">Player 9</option>
+          <option value="10">Player 10</option>
+          <option value="11">Player 11</option>
+          <option value="12">Player 12</option>
+        </select>
+      </div>
+      <button type="button" id="spinButton" class="btn">Spin Bottle</button>
+    </form>
+    <div id="result" class="hidden">
+      <h2>Current Turn:</h2>
+      <p id="currentPlayer"></p>
+      <div id="options" class="hidden">
+        <label for="truthDare">Choose Truth or Dare:</label>
+        <select id="truthDare" name="truthDare">
+          <option value="truth">Truth</option>
+          <option value="dare">Dare</option>
+        </select>
+        <button type="button" id="askQuestion" class="btn">Next</button>
+      </div>
+      <div id="questionArea" class="hidden">
+        <h2>Ask a Question:</h2>
+        <textarea id="questionInput"></textarea>
+        <button type="button" id="submitQuestion" class="btn">Ask</button>
+      </div>
+      <div id="answerArea" class="hidden">
+        <h2>Answer the Question:</h2>
+        <p id="questionAsked"></p>
+        <textarea id="answerInput"></textarea>
+        <button type="button" id="submitAnswer" class="btn">Submit Answer</button>
+      </div>
+    </div>
+  </div>
+  <div id="bottle" class="bottle"></div>
+  <script src="another.js"></script>
+</body>
+</html>
